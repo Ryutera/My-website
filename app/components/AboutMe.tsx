@@ -7,13 +7,14 @@ import Image from "next/image"
         About Me
       </h2>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 items-center">
           <Image
-            src="/placeholder.svg?height=400&width=400"
+            src="/images/image1.jpeg"
             alt="Your Name"
             width={400}
             height={400}
-            className="rounded-full shadow-lg"
+            className="rounded-full shadow-lg s"
+            
           />
         </div>
         <div className="w-full md:w-1/2">
