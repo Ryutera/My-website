@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -50,7 +51,7 @@ const Projects = () => {
       </div>
       <div className="  max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <div>
-          <img className="rounded-t-lg w-full" src="/Users/trtr/Desktop/My-website/public/images/image1.jpeg" alt="" />
+        <Image src="/images/image1.jpeg" alt="image" width={500} height={300} className="rounded-t-lg w-full" />
         </div>
         <div className="p-5 flex items-center justify-center flex-col">
           <a href="#">
