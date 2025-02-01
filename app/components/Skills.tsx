@@ -1,3 +1,4 @@
+// Skills.tsx
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -7,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import SkillsDesignPC from './SkillsDesignPC';
 
 const skills = [
   { name: 'HTML', src: '/images/html.png' },
@@ -18,29 +20,17 @@ const skills = [
   { name: 'Tailwind CSS', src: '/images/tailwind.png' },
   { name: 'Supabase', src: '/images/supabase.jpeg' },
   { name: 'Prisma', src: '/images/prisma.svg' },
-
 ];
+
+
 
 const Skills = () => {
   return (
-    <section  id="skills" className="min-h-screen py-16 px-4  ">
-        
+    <section id="skills" className="min-h-screen py-16 px-4">
       <h2 className="text-3xl font-bold text-center">Skills</h2>
-      
-      
+
       {/* デスクトップサイズ用のスキル表示 */}
-      <div className=" hidden md:grid grid-cols-3 gap-10 place-items-center mt-10">
-        {skills.map((skill, index) => (
-          <div key={index} className="w-[60%] h-auto rounded-lg mb-10">
-            <p className="text-center text-lg font-bold mb-3">{skill.name}</p>
-            <img
-              src={skill.src}
-              alt={skill.name}
-              className="w-full h-32 object-contain mx-auto"
-            />
-          </div>
-        ))}
-      </div>
+      <SkillsDesignPC skills={skills} />
 
       {/* モバイル表示用のカルーセル */}
       <div className="flex justify-center items-center mt-10 md:hidden">
