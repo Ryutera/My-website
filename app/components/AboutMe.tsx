@@ -6,14 +6,14 @@ import Image from "next/image"
       <h2  className="text-3xl font-bold text-center mb-12">
         About Me
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-aut">
-        <div className="w-full md:w-1/2 ">
+      <div className="flex flex-col md:flex-row items-center justify-center  gap-8 max-w-6xl mx-auto">
+        <div className="w-full md:w-1/2 flex justify-center">
           <Image
-            src="/images/image1.jpeg"
+            src="/images/img1.jpeg"
             alt="Your Name"
-            width={400}
-            height={400}
-            className="rounded-full shadow-lg s"
+            width={200}
+            height={200}
+            className="rounded-full shadow-lg s md:h-[350px] md:w-[350px]"
             
           />
         </div>

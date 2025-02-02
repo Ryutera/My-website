@@ -9,7 +9,7 @@ const Projects = () => {
 
       <div className="  max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <div>
-          <img className="rounded-t-lg w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT45Tk0qsiFoYTG3Yy2vXJg2XBp4LSOPkq4yw&s" alt="" />
+          <img className="rounded-t-lg w-full" src="/images/img1.jpeg" alt="" />
         </div>
         <div className="p-5 flex items-center justify-center flex-col">
           <a href="#">
