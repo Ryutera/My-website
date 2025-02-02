@@ -1,49 +1,35 @@
-import React from 'react'
+// Skills.tsx
+import React from 'react';
+
+import SkillsDesignPC from './SkillsDesignPC';
+import SkillsDesignMobile from './SkillsDesignMobile';
+
+const skills = [
+  { name: 'HTML', src: '/images/html.png' },
+  { name: 'CSS', src: '/images/css.png' },
+  { name: 'JavaScript', src: '/images/js.png' },
+  { name: 'TypeScript', src: '/images/ts.png' },
+  { name: 'React', src: '/images/react.png' },
+  { name: 'Next.js', src: '/images/next-js.svg' },
+  { name: 'Tailwind CSS', src: '/images/tailwind.png' },
+  { name: 'Supabase', src: '/images/supabase.jpeg' },
+  { name: 'Prisma', src: '/images/prisma.svg' },
+];
+
+
 
 const Skills = () => {
   return (
     <section id="skills" className="min-h-screen py-16 px-4">
       <h2 className="text-3xl font-bold text-center">Skills</h2>
-      <div className="lg:grid grid-cols-3 gap-10 place-items-center md:flex md:flex-col  mt-10">
-        <div className="w-[60%] h-auto rounded-lg mb-10">
-        <p className='text-center text-lg font-bold mb-3'>HTML</p>
-        <img src="/images/html.png" alt="HTML" className='w-full' />
-        </div>
-        <div className="w-[60%] h-auto rounded-lg mb-10">
-        <p className='text-center text-lg font-bold mb-3'>HTML</p>
-        <img src="/images/css.png" alt="HTML" className='w-full' />
-        </div>
-        <div className="w-[60%] h-auto rounded-lg mb-10">
-        <p className='text-center text-lg font-bold mb-3'>HTML</p>
-        <img src="/images/js.png" alt="HTML" className='w-full' />
-        </div>
-        <div className="w-[60%] h-auto rounded-lg mb-10">
-        <p className='text-center text-lg font-bold mb-3'>HTML</p>
-        <img src="/images/ts.png" alt="HTML" className='w-full' />
-        </div>
-        <div className="w-[60%] h-auto rounded-lg mb-10">
-        <p className='text-center text-lg font-bold mb-3'>HTML</p>
-        <img src="/images/react.png" alt="HTML" className='w-full' />
-        </div>
-        <div className="w-[60%] h-auto rounded-lg mb-10">
-        <p className='text-center text-lg font-bold mb-3'>HTML</p>
-        <img src="/images/next-js.svg" alt="HTML" className='w-full' />
-        </div>
-        <div className="w-[60%] h-auto rounded-lg mb-10">
-        <p className='text-center text-lg font-bold mb-3'>HTML</p>
-        <img src="/images/supabase.jpeg" alt="HTML" className='w-full' />
-        </div>
-        <div className="w-[60%] h-auto rounded-lg mb-10">
-        <p className='text-center text-lg font-bold mb-3'>HTML</p>
-        <img src="/images/prisma.svg" alt="HTML" className='w-full' />
-        </div>
-        
 
+      {/* デスクトップサイズ用のスキル表示 */}
+      <SkillsDesignPC skills={skills} />
 
-        
-      </div>
+      {/* モバイル表示用のカルーセル */}
+      <SkillsDesignMobile  skills={skills} />
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
