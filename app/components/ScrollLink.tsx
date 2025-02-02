@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef } from "react"
+
 import type React from "react" // Import React
 
 interface ScrollLinkProps {
@@ -9,7 +9,7 @@ interface ScrollLinkProps {
 }
 
 export default function ScrollLink({ href, children }: ScrollLinkProps) {
-  const ref = useRef<HTMLAnchorElement>(null)
+
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
@@ -21,7 +21,7 @@ export default function ScrollLink({ href, children }: ScrollLinkProps) {
   }
 
   return (
-    <a ref={ref} href={href} onClick={handleClick} className="text-gray-600 hover:text-gray-900">
+    <a  href={href} onClick={handleClick} className="text-gray-600 hover:text-gray-900">
       {children}
     </a>
   )

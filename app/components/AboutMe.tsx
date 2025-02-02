@@ -6,8 +6,8 @@ import Image from "next/image"
       <h2  className="text-3xl font-bold text-center mb-12">
         About Me
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
-        <div className="w-full md:w-1/2 items-center">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-aut">
+        <div className="w-full md:w-1/2 ">
           <Image
             src="/images/image1.jpeg"
             alt="Your Name"
@@ -17,6 +17,7 @@ import Image from "next/image"
             
           />
         </div>
+        
         <div className="w-full md:w-1/2">
           <p className="text-lg leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam natus quo non, voluptatem omnis a fuga
